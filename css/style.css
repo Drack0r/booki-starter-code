@@ -19,6 +19,8 @@ body {
 }
 
 .main-container {
+  border: 1px dashed #000;
+  position: relative;
   width: 100%;
   max-width: 1440px;
   padding: 0 50px;
@@ -56,6 +58,71 @@ a {
 
 .neutral-star {
   color: var(--main-bg-color);
+}
+
+/****** Header ***********/
+.header {
+  position: relative;
+  left: -50px;
+  height: 79px;
+  width: calc(100% + 100px);
+  max-width: 1440px;
+  margin-bottom: 30px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.header__logo {
+  height: 100%;
+  width: 11.18%;
+  max-width: 161.09px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header__nav {
+  height: 35px;
+  width: 23.88%;
+  max-width: 344px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header__nav-list {
+  height: 100%;
+  width: 70.93%;
+  max-width: 244px;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
+.header__nav-link {
+  position: relative;
+}
+
+.header__nav-link:hover {
+  color: #0065fc;
+  transition: all 0.3s ease;
+}
+
+.header__nav-link::before {
+  content: "";
+  position: absolute;
+  top: -85%;
+  height: 2px;
+  width: 0;
+  background: #0065fc;
+}
+
+.header__nav-link:hover::before {
+  width: 100%;
+  transition: all 0.3s ease;
 }
 
 /****** Hebergements And Populaires ***********/
