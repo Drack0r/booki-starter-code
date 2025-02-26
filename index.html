@@ -4,8 +4,6 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Booki</title>
-
-    <!-- google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -19,8 +17,6 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-
-    <!-- CSS -->
     <link rel="stylesheet" href="./css/style.css" />
   </head>
 
@@ -28,73 +24,81 @@
     <div class="main-container">
       <!-- header -->
       <header class="header">
+        <!-- header__logo -->
         <div class="header__logo">
           <a href="index.html">
             <img
               src="/images/logo/Booki.png"
-              alt="Logo Booki"
+              alt="Logo de Booki"
               height="19"
               width="61.09"
             />
           </a>
         </div>
 
+        <!-- header__nav -->
         <nav class="header__nav">
           <ul class="header__nav-list">
-            <li><a href="#" class="header__nav-link">Hébergements</a></li>
-            <li><a href="#" class="header__nav-link">Activités</a></li>
+            <li>
+              <a href="#hebergements" class="header__nav-link">Hébergements</a>
+            </li>
+            <li><a href="#activites" class="header__nav-link">Activités</a></li>
           </ul>
         </nav>
       </header>
 
       <!-- main -->
       <main>
+        <!-- form__title -->
+        <div class="form-title">
+          <h1 class="section-title">
+            Trouvez votre hébergement pour des vacances de rêve
+          </h1>
+          <p class="form-title__description">
+            En plein centre-ville ou en pleine nature
+          </p>
+        </div>
         <!-- form -->
         <form class="form">
-          <div class="form-title">
-            <h2 class="section-title">
-              Trouvez votre hébergement pour des vacances de rêve
-            </h2>
-            <p class="form-title__description">
-              En plein centre-ville ou en pleine nature
-            </p>
-          </div>
-
           <div class="form__search-bar">
-            <button type="button" class="search-bar__position">
+            <button class="search-bar__position">
               <i class="fa-solid fa-location-dot fa-lg"></i>
             </button>
 
-            <input type="search" class="search-bar__input" />
+            <input
+              type="search"
+              class="search-bar__input"
+              placeholder="Marseille, France"
+            />
 
-            <button type="button" class="search-bar__action">Rechercher</button>
+            <button class="search-bar__action">Rechercher</button>
           </div>
 
           <div class="form__filtres">
-            <h3 class="filtres__title">Filtres</h3>
+            <h2 class="filtres__title">Filtres</h2>
 
-            <button type="button" class="filtres__btn">
+            <button class="filtres__btn">
               <i class="fa-solid fa-money-bill-wave fa-xl"></i>
 
-              <h4>Économique</h4>
+              <span>Économique</span>
             </button>
 
-            <button type="button" class="filtres__btn">
+            <button class="filtres__btn">
               <i class="fa-solid fa-person fa-xl"></i>
 
-              <h4>Familial</h4>
+              <span>Familial</span>
             </button>
 
             <button class="filtres__btn">
               <i class="fa-solid fa-heart fa-xl"></i>
 
-              <h4>Romantique</h4>
+              <span>Romantique</span>
             </button>
 
             <button class="filtres__btn">
               <i class="fa-solid fa-fire fa-xl"></i>
 
-              <h4>Nos pépites</h4>
+              <span>Nos pépites</span>
             </button>
           </div>
 
@@ -109,11 +113,12 @@
 
         <div class="hebergements-and-populaires">
           <!-- hebergements -->
-          <section class="hebergements">
+          <section class="hebergements" id="hebergements">
             <div class="hebergements__title">
               <h2 class="section-title">Hébergements à Marseille</h2>
             </div>
 
+            <!-- hebergements__cards -->
             <div class="hebergements__cards">
               <a href="#">
                 <!-- card -->
@@ -225,9 +230,7 @@
                   </div>
                 </article>
               </a>
-            </div>
 
-            <div class="hebergements__cards">
               <a href="#">
                 <!-- card -->
                 <article class="card">
@@ -468,8 +471,83 @@
             </div>
           </section>
         </div>
+
+        <!-- activites -->
+        <section class="activites" id="activites">
+          <h2 class="section-title">Activités à Marseille</h2>
+
+          <div class="activites__cards">
+            <a href="#">
+              <!-- card -->
+              <article class="card">
+                <img
+                  src="/images/activites/reno-laithienne.jpg"
+                  alt="Image du Vieux-Port"
+                />
+
+                <h3>Vieux-Port</h3>
+              </article>
+            </a>
+
+            <a href="#">
+              <!-- card -->
+              <article class="card">
+                <img
+                  src="/images/activites/paul-hermann.jpg"
+                  alt="Image du Fort de Pomègues"
+                />
+
+                <h3>Fort de Pomègues</h3>
+              </article>
+            </a>
+
+            <a href="#">
+              <!-- card -->
+              <article class="card">
+                <img
+                  src="/images/activites/kilyan-sockalingum.jpg"
+                  alt="Image du Parc national des Calanques"
+                />
+
+                <h3>Parc national des Calanques</h3>
+              </article>
+            </a>
+
+            <a href="#">
+              <!-- card -->
+              <article class="card">
+                <img
+                  src="/images/activites/florian-wehde.jpg"
+                  alt="Image de Notre-Dame-de-la-Garde"
+                />
+
+                <h3>Notre-Dame-de-la-Garde</h3>
+              </article>
+            </a>
+          </div>
+        </section>
       </main>
-      <footer></footer>
+
+      <footer class="footer">
+        <div class="footer__col">
+          <h4>À propos</h4>
+          <a href="#">Fonctionnement du site</a>
+          <a href="#">Conditions générales</a>
+          <a href="#">Données et confidentialité</a>
+        </div>
+
+        <div class="footer__col">
+          <h4>Nos hébergements</h4>
+          <a href="#">Charte qualité</a>
+          <a href="#">Proposer votre hôtel</a>
+        </div>
+
+        <div class="footer__col">
+          <h4>Assistance</h4>
+          <a href="#">Centre d'aide</a>
+          <a href="#">Nous contacter</a>
+        </div>
+      </footer>
     </div>
   </body>
 </html>
