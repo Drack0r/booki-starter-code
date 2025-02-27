@@ -149,10 +149,11 @@ a {
 .form__search-bar {
   height: 49px;
   width: 377px;
-  margin-top: 35px;
+  margin-top: 15px;
   border: 1px solid #f2f2f2;
   border-radius: 15px;
   display: flex;
+  justify-content: space-between;
 }
 
 .search-bar__position {
@@ -197,6 +198,20 @@ a {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.search-bar__icon {
+  height: 49px;
+  width: 49px;
+  border: none;
+  border-radius: 15px;
+  background: #0065fc;
+  cursor: pointer;
+  display: none;
+}
+
+.search-bar__icon i {
+  color: #fff;
 }
 
 .form__filtres {
@@ -489,5 +504,11 @@ a {
 
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
-  /* ... */
+  .search-bar__action {
+    display: none;
+  }
+
+  .search-bar__icon {
+    display: block;
+  }
 }
