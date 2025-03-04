@@ -43,7 +43,7 @@ a {
   filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
 }
 
-/* Optionnel */
+/* Options */
 .card:hover {
   transform: scale(1.05);
   filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.2));
@@ -68,20 +68,23 @@ a {
 
 /****** Header ***********/
 .header {
+  /* border: 1px dashed #000; */
   position: relative;
-  left: -50px;
-  height: 79px;
-  width: calc(100% + 100px);
+  /* left: -50px; */
+  /* height: 79px; */
+  /* width: calc(100% + 100px); */
+  width: 100%;
   max-width: 1440px;
+  /* padding: 0 50px; */
   margin-bottom: 30px;
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   justify-content: space-between;
 }
 
 .header__logo {
-  height: 100%;
-  width: 11.18%;
+  height: 19px;
+  /* width: 11.18%; */
   max-width: 161.09px;
   display: flex;
   align-items: center;
@@ -89,23 +92,24 @@ a {
 }
 
 .header__nav {
-  height: 35px;
-  width: 23.88%;
+  height: 79px;
+  /* width: 23.88%; */
   max-width: 344px;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
 }
 
 .header__nav-list {
-  height: 100%;
-  width: 70.93%;
+  /* height: 100%; */
+  /* width: 70.93%; */
   max-width: 244px;
   padding: 0;
   list-style: none;
   display: flex;
-  align-items: flex-end;
+  align-items: flex-start;
   justify-content: space-between;
+  gap: 70px;
 }
 
 .header__nav-link {
@@ -216,7 +220,7 @@ a {
 }
 
 .form__filter {
-  height: 50px;
+  /* height: 50px; */
   width: 56.56%;
   max-width: 758px;
   display: flex;
@@ -230,9 +234,21 @@ a {
   font-size: 1.125rem;
 }
 
+.filter__buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+
+.filter__btn:nth-child(4) {
+  min-width: 167px;
+}
+
 .filter__btn {
   cursor: pointer;
-  height: 100%;
+  height: 50px;
+  width: auto;
   padding: 15px 17px;
   border: 2px solid #d9d9d9;
   border-radius: 25px;
@@ -455,6 +471,7 @@ a {
   display: flex;
   flex-direction: column;
   gap: 15px;
+  box-sizing: border-box;
 }
 
 .footer__col h4 {
@@ -469,6 +486,20 @@ a {
 /****** Media queries ***********/
 /* Medium devices (tablets, less/equal than 1024px) */
 @media (max-width: 1024px) {
+  .form__filter {
+    height: 91px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    /* margin-top: 17px; */
+  }
+
+  .filter__buttons {
+    position: relative;
+    top: -10px;
+  }
+
   .accommodations-and-popular {
     flex-direction: column;
   }
