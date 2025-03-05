@@ -1,0 +1,83 @@
+/****** Media queries ***********/
+/* Medium devices (tablets, less/equal than 1024px) */
+@media (max-width: 1024px) {
+  .responsive-br {
+    display: inline;
+  }
+
+  .form__filter {
+    height: 91px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    /* margin-top: 17px; */
+  }
+
+  .filter__buttons {
+    position: relative;
+    top: -10px;
+  }
+
+  .accommodations-and-popular {
+    flex-direction: column;
+  }
+
+  .accommodations {
+    width: 100%;
+  }
+
+  .accommodations__cards {
+    /* border: 1px dashed #000; */
+    width: 106%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .accommodations__cards img {
+    width: 263px;
+  }
+
+  .accommodations__cards h3 {
+    font-size: 1rem;
+  }
+
+  .accommodations__cards p {
+    font-size: 0.875rem;
+  }
+
+  .popular {
+    width: 100%;
+    margin-top: 50px;
+  }
+
+  .popular__cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .popular__cards a {
+    width: 30%;
+  }
+
+  .popular__cards .card__title {
+    font-size: 1rem;
+  }
+
+  .popular__cards .card__subtitle {
+    font-size: 0.875rem;
+  }
+
+  .activities__cards {
+    margin-top: 20px;
+  }
+
+  .activities__cards img {
+    height: 200px;
+    width: 193.5px;
+  }
+}

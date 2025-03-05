@@ -1,0 +1,10 @@
+/* Small devices (phones, less than 768px) */
+@media (max-width: 767.98px) {
+  .search-bar__action {
+    display: none;
+  }
+
+  .search-bar__icon {
+    display: block;
+  }
+}
