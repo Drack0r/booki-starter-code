@@ -468,6 +468,11 @@ a {
   display: flex;
 }
 
+.footer__nav {
+  width: 100%;
+  display: flex;
+}
+
 .footer__col {
   height: 100%;
   width: 33.33%;
@@ -476,6 +481,15 @@ a {
   flex-direction: column;
   gap: 15px;
   box-sizing: border-box;
+}
+
+.footer__col ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
 }
 
 .footer__col h4 {
@@ -530,6 +544,14 @@ a {
     width: 263px;
   }
 
+  .accommodations__cards h3 {
+    font-size: 1rem;
+  }
+
+  .accommodations__cards p {
+    font-size: 0.875rem;
+  }
+
   .popular {
     width: 100%;
     margin-top: 50px;
@@ -546,11 +568,11 @@ a {
   }
 
   .popular__cards .card__title {
-    font-size: 14px;
+    font-size: 1rem;
   }
 
   .popular__cards .card__subtitle {
-    font-size: 13px;
+    font-size: 0.875rem;
   }
 
   .activities__cards {
