@@ -1,5 +1,70 @@
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
+  .main-container {
+    padding: 0;
+  }
+
+  .header {
+    height: auto;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .header__logo {
+    margin-top: 30px;
+  }
+
+  .header__nav {
+    height: auto;
+    width: 100%;
+    max-width: 375px;
+    margin-top: 30px;
+  }
+
+  .header__nav-list {
+    position: relative;
+    width: 100%;
+    max-width: 375px;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0;
+  }
+
+  .header__nav-list li {
+    position: relative;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .header__nav-link {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .header__nav-link::before {
+    position: absolute;
+    top: 34px;
+  }
+
+  .phone-separator {
+    display: block;
+    border: none;
+    height: 2px;
+    width: 100%;
+    margin: 0;
+    margin-top: 15px;
+    margin-bottom: 30px;
+    background: #f2f2f2;
+  }
+
   .search-bar__action {
     display: none;
   }

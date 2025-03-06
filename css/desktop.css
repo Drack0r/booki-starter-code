@@ -13,6 +13,10 @@
   color: var(--main-color);
 }
 
+html {
+  /* width: 100%; */
+}
+
 body {
   margin: 0;
   display: flex;
@@ -138,6 +142,10 @@ a {
 .header__nav-link:hover::before {
   width: 100%;
   transition: all 0.3s ease;
+}
+
+.phone-separator {
+  display: none;
 }
 
 /****** Form ***********/
