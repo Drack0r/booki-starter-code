@@ -146,6 +146,10 @@
     gap: 10px;
   }
 
+  .filter__btn span {
+    font-size: 14px;
+  }
+
   .filter__btn:nth-child(4) {
     min-width: 162.5px;
   }
@@ -169,17 +173,31 @@
     order: 1;
     width: 100%;
     padding: 30px 20px;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
   }
 
-  .popular__cards img {
-    width: 111.6px;
+  .popular__cards {
+    width: 100%;
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    padding: 0;
+  }
+
+  .popular__cards .card img {
+    height: 146px;
+    width: 111.67px;
+    object-fit: cover;
   }
 
   .popular__cards .card {
     width: 335px;
-    position: relative;
-    left: -15px;
+    /* max-width: 500px; */
+    margin: 0;
+    /* position: relative; */
+    /* left: -15px; */
   }
 
   .popular__cards h3 {
