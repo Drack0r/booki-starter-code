@@ -13,10 +13,6 @@
   color: var(--main-color);
 }
 
-html {
-  /* width: 100%; */
-}
-
 body {
   margin: 0;
   display: flex;
