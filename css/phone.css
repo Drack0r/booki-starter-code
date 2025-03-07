@@ -224,4 +224,31 @@
   .accommodations__cards .card__rating {
     margin-bottom: 15px;
   }
+
+  .activities {
+    width: 100% !important;
+    max-width: 375px !important;
+  }
+
+  .activities .responsive-br {
+    display: none;
+  }
+
+  .activities__cards {
+    gap: 15px;
+  }
+
+  .activities__cards .card {
+    width: 315px;
+    box-shadow: 0 3px 15px #0000001a;
+  }
+
+  .activities__cards img {
+    width: 315px;
+    height: 141px;
+  }
+
+  .activities__cards h3 {
+    font-size: 16px;
+  }
 }
