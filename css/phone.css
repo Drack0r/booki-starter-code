@@ -6,6 +6,7 @@
 
   .main-container {
     padding: 0;
+    width: 100%;
   }
 
   .header {
@@ -148,5 +149,45 @@
 
   .form__details p {
     margin: 0;
+  }
+
+  .accommodations-and-popular {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .popular {
+    order: 1;
+    width: 100%;
+    padding: 30px 20px;
+    margin-bottom: 15px;
+  }
+
+  .popular__cards img {
+    width: 111.6px;
+  }
+
+  .popular__cards .card {
+    width: 335px;
+    position: relative;
+    left: -15px;
+  }
+
+  .popular__cards h3 {
+    font-size: 16px;
+    margin-top: 15px;
+  }
+
+  .popular__cards p {
+    font-size: 14px;
+    margin-top: 5px;
+  }
+
+  .popular__cards .card__rating {
+    margin-bottom: 10px;
+  }
+
+  .accommodations {
+    order: 2;
   }
 }

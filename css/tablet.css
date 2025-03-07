@@ -78,6 +78,16 @@
 
   .activities__cards img {
     height: 200px;
+    max-height: 200px;
     width: 193.5px;
+  }
+
+  .activities__cards h3 {
+    margin: 25px 0;
+    padding: 0 19px;
+  }
+
+  .activities__cards h3.long-title {
+    margin: 16px 0;
   }
 }
