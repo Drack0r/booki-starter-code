@@ -72,6 +72,11 @@
     font-size: 0.875rem;
   }
 
+  .activities {
+    width: 100%;
+    box-sizing: border-box;
+  }
+
   .activities__cards {
     margin-top: 20px;
   }
