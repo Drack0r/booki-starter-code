@@ -5,6 +5,10 @@
     display: inline;
   }
 
+  .form__title .section-title .responsive-br {
+    display: none;
+  }
+
   .form__filter {
     height: 91px;
     display: flex;
@@ -12,6 +16,10 @@
     align-items: flex-start;
     justify-content: center;
     /* margin-top: 17px; */
+  }
+
+  .form__details p .responsive-br {
+    display: none;
   }
 
   .filter__buttons {
@@ -34,7 +42,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 20px;
+    gap: 30px;
   }
 
   .accommodations__cards img {
@@ -61,11 +69,16 @@
   }
 
   .popular__cards a {
-    width: 30%;
+    width: 31.7%;
+  }
+
+  .popular__card img {
+    height: 146px;
   }
 
   .popular__cards .card__title {
     font-size: 1rem;
+    line-height: 1.2;
   }
 
   .popular__cards .card__subtitle {
