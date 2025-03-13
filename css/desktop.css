@@ -321,7 +321,7 @@ a {
 
 .accommodations__cards {
   height: auto;
-  width: 825px;
+  width: 100%;
   display: flex;
   flex-wrap: wrap;
   align-self: center;
@@ -334,7 +334,7 @@ a {
 }
 
 .accommodations__cards img {
-  width: 245px;
+  width: 16.05vw;
   height: 124px;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
