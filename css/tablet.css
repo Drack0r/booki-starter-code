@@ -36,8 +36,7 @@
   }
 
   .accommodations__cards {
-    /* border: 1px dashed #000; */
-    width: 106%;
+    width: 100%;
     height: auto;
     display: flex;
     align-items: center;
@@ -45,8 +44,17 @@
     gap: 30px;
   }
 
+  .accommodations__cards a {
+    width: 31%;
+    display: flex;
+  }
+
+  .accommodations__cards .card {
+    width: 100%;
+  }
+
   .accommodations__cards img {
-    width: 263px;
+    width: 100%;
   }
 
   .accommodations__cards h3 {
@@ -107,5 +115,34 @@
 
   .activities__cards h3.long-title {
     margin: 16px 0;
+  }
+}
+
+/* Media queries */
+
+/* @media (min-width: 781px) and (max-width: 993px) {
+  .activities__cards {
+    width: 70%;
+    align-self: start;
+  }
+} */
+
+@media (max-width: 1016px) {
+  .accommodations__cards {
+    gap: 20px;
+  }
+
+  .accommodations__cards .card__content {
+    padding: 0 3px;
+  }
+
+  /* .accommodations__cards .responsive-br {
+    display: none;
+  } */
+}
+
+@media (max-width: 1023px) {
+  .activities__cards {
+    gap: 20px;
   }
 }
