@@ -423,15 +423,22 @@ a {
   gap: 30px;
 }
 
+.activities__cards a {
+  display: flex;
+  width: 23.24%;
+}
+
 .activities__cards .card {
+  width: 100%;
+  max-width: 297.5px;
   padding: 0;
   display: flex;
   flex-direction: column;
 }
 
 .activities__cards img {
+  width: 100% !important;
   height: 380px;
-  width: 297.5px;
   border-radius: 15px 15px 0 0;
 }
 
@@ -484,6 +491,13 @@ a {
 /* Media Queries */
 @media (max-width: 1436px) {
   .accommodations__cards {
+    justify-content: center;
+    gap: 20px;
+  }
+}
+
+@media (max-width: 1377px) {
+  .activities__cards {
     justify-content: center;
     gap: 20px;
   }

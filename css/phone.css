@@ -285,6 +285,7 @@
 
   .activities__cards .card {
     width: 100%;
+    max-width: 767px;
     box-shadow: 0 3px 15px #0000001a;
   }
 
